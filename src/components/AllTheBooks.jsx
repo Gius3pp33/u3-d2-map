@@ -16,12 +16,8 @@ const genres = {
 };
 // Definizione del componente di classe AllTheBooks  
 class AllTheBooks extends Component {
-    constructor(props) {
-        super(props);// Chiama il costruttore della classe Component per inizializzare il componente
-          // inizializzazione dello stato del componente
-        this.state = {
-            selectedGenre: 'Fantasy', //imposto un genere inziale
-        };
+    state = {
+     selectedGenre: 'Fantasy'
     }
      // metodo per gestire il cambio del genere selezionato
     handleSelect = (genre) => {

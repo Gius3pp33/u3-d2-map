@@ -6,8 +6,8 @@ const Welcome = () => {
     return(
         <div className="mt-5">
       <Alert variant="warning">
-        <Alert.Heading>Welcome to My Book Shop</Alert.Heading>
-        <p>Enjoy this books!</p>
+        <Alert.Heading>Welcome to EpiBooks!</Alert.Heading>
+       
       </Alert>
     </div>
     );
