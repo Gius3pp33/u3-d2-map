@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Card, Badge } from 'react-bootstrap';
+import CommentArea from './CommentArea'
 
 class SingleBook extends Component {
     state = {
@@ -20,6 +21,7 @@ class SingleBook extends Component {
         const { selected } = this.state;
 
         return (
+            <div>
             <Card
                 className={`book-card mb-4 ${selected ? 'selected' : ''}`}
                 onClick={this.handleClick}
@@ -40,6 +42,8 @@ class SingleBook extends Component {
                     <Badge bg="dark">{book.price}€</Badge>
                 </Card.Body>
             </Card>
+            {selected && <CommentArea book={book} />}
+            </div>
         );
     }
 }

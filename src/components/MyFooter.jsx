@@ -7,7 +7,7 @@ const MyFooter = () => {
         <Container>
           <Row>
             <Col>
-              <p> C 2024 My Book Shop. etc etc <br/> All rights reserved.</p>
+              <p> C 2024 EpiBooks <br/> All rights reserved.</p>
             </Col>
           </Row>
         </Container>
