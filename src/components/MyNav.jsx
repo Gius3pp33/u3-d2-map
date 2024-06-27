@@ -6,7 +6,7 @@ const MyNav = ({ onSelectGenre, genres }) => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
-      <Navbar.Brand href="#">EpiBooks</Navbar.Brand>
+      <Navbar.Brand href="#">📓📓EpiBooks</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
@@ -17,7 +17,7 @@ const MyNav = ({ onSelectGenre, genres }) => {
             <Dropdown.Toggle variant="dark" id="dropdown-basic">
               Select Genre
             </Dropdown.Toggle>
-            <Dropdown.Menu>
+            <Dropdown.Menu variant="dark">
               {Object.keys(genres).map((genre) => (
                 <Dropdown.Item key={genre} onClick={() => onSelectGenre(genre)}>
                   {genre}

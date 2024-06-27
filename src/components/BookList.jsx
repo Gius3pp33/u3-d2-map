@@ -21,7 +21,7 @@ const BookList = ({ books }) => {
             </Form.Group>
             <Row>
                 {filteredBooks.map((book) => (
-                    <Col md={4} key={book.asin} className="mb-4">
+                    <Col  xs={12}  md={6} xl={4}  key={book.asin} className="mb-4">
                         <SingleBook book={book} />
                     </Col>
                 ))}
